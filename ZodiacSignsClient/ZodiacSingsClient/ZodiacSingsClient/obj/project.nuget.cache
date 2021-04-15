@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "rUQYV6fLj4EgFihWIl0TX5v/gRL/VjAQ/C6byINUYSLXYSCb0lRREeIT23AIfrfBmsvpSLD86MIhWGXrAx/5hQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\emasu\\Desktop\\CNA\\Teme\\Tema2\\Second-homework-Cloud-Native-Application\\ZodiacSignsClient\\ZodiacSingsClient\\ZodiacSingsClient\\ZodiacSingsClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\emasu\\.nuget\\packages\\google.protobuf\\3.15.8\\google.protobuf.3.15.8.nupkg.sha512",
+    "C:\\Users\\emasu\\.nuget\\packages\\grpc.core.api\\2.36.1\\grpc.core.api.2.36.1.nupkg.sha512",
+    "C:\\Users\\emasu\\.nuget\\packages\\grpc.net.client\\2.36.0\\grpc.net.client.2.36.0.nupkg.sha512",
+    "C:\\Users\\emasu\\.nuget\\packages\\grpc.net.common\\2.36.0\\grpc.net.common.2.36.0.nupkg.sha512",
+    "C:\\Users\\emasu\\.nuget\\packages\\grpc.tools\\2.37.0\\grpc.tools.2.37.0.nupkg.sha512",
+    "C:\\Users\\emasu\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.0.3\\microsoft.extensions.logging.abstractions.3.0.3.nupkg.sha512",
+    "C:\\Users\\emasu\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\emasu\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "ZodiacService.Protos";
+
+service Zodiac{
+	rpc GetZodiacSign(CustomerDate) returns (ZodiacSign);
+}
+
+message CustomerDate{
+	string date=1;
+}
+
+message ZodiacSign{
+	string signName=1;
+}
