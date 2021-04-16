@@ -24,10 +24,11 @@ namespace ZodiacService.Protos {
     static ZodiacReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChNQcm90b3Mvem9kaWFjLnByb3RvIhwKDEN1c3RvbWVyRGF0ZRIMCgRkYXRl",
-            "GAEgASgJIh4KClpvZGlhY1NpZ24SEAoIc2lnbk5hbWUYASABKAkyNQoGWm9k",
-            "aWFjEisKDUdldFpvZGlhY1NpZ24SDS5DdXN0b21lckRhdGUaCy5ab2RpYWNT",
-            "aWduQheqAhRab2RpYWNTZXJ2aWNlLlByb3Rvc2IGcHJvdG8z"));
+            "ChNQcm90b3Mvem9kaWFjLnByb3RvEgZ6b2RpYWMiHAoMQ3VzdG9tZXJEYXRl",
+            "EgwKBGRhdGUYASABKAkiHgoKWm9kaWFjU2lnbhIQCghzaWduTmFtZRgBIAEo",
+            "CTJDCgZab2RpYWMSOQoNR2V0Wm9kaWFjU2lnbhIULnpvZGlhYy5DdXN0b21l",
+            "ckRhdGUaEi56b2RpYWMuWm9kaWFjU2lnbkIXqgIUWm9kaWFjU2VydmljZS5Q",
+            "cm90b3NiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

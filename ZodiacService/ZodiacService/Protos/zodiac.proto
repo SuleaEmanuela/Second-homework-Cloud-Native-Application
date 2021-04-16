@@ -2,6 +2,8 @@ syntax = "proto3";
 
 option csharp_namespace = "ZodiacService.Protos";
 
+package zodiac;
+
 service Zodiac{
 	rpc GetZodiacSign(CustomerDate) returns (ZodiacSign);
 }

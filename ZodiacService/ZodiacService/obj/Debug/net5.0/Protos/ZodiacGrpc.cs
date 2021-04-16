@@ -10,7 +10,7 @@ using grpc = global::Grpc.Core;
 namespace ZodiacService.Protos {
   public static partial class Zodiac
   {
-    static readonly string __ServiceName = "Zodiac";
+    static readonly string __ServiceName = "zodiac.Zodiac";
 
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
     {
@@ -42,15 +42,15 @@ namespace ZodiacService.Protos {
       return parser.ParseFrom(context.PayloadAsNewBuffer());
     }
 
-    static readonly grpc::Marshaller<global::ZodiacService.Protos.CustomerDate> __Marshaller_CustomerDate = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ZodiacService.Protos.CustomerDate.Parser));
-    static readonly grpc::Marshaller<global::ZodiacService.Protos.ZodiacSign> __Marshaller_ZodiacSign = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ZodiacService.Protos.ZodiacSign.Parser));
+    static readonly grpc::Marshaller<global::ZodiacService.Protos.CustomerDate> __Marshaller_zodiac_CustomerDate = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ZodiacService.Protos.CustomerDate.Parser));
+    static readonly grpc::Marshaller<global::ZodiacService.Protos.ZodiacSign> __Marshaller_zodiac_ZodiacSign = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ZodiacService.Protos.ZodiacSign.Parser));
 
     static readonly grpc::Method<global::ZodiacService.Protos.CustomerDate, global::ZodiacService.Protos.ZodiacSign> __Method_GetZodiacSign = new grpc::Method<global::ZodiacService.Protos.CustomerDate, global::ZodiacService.Protos.ZodiacSign>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetZodiacSign",
-        __Marshaller_CustomerDate,
-        __Marshaller_ZodiacSign);
+        __Marshaller_zodiac_CustomerDate,
+        __Marshaller_zodiac_ZodiacSign);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
