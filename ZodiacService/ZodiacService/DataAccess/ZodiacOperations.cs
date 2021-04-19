@@ -64,10 +64,15 @@ namespace ZodiacService.DataAccess
 
         public void ValidateDate(CustomerDate date)
         {
+            string[] formattedDate = date.Date.Split('/');
+            string day = formattedDate[1];
+            string month = formattedDate[0];
+            string year = formattedDate[2];
             DateTime result;
             string[] formats = { "M/d/yyyy", "MM/dd/yyyy" };
-            bool dateValide = DateTime.TryParseExact(date.Date, formats, CultureInfo.InvariantCulture, DateTimeStyles.None, out result);
-            Console.WriteLine(dateValide);
+            bool dateFormatValide = DateTime.TryParseExact(date.Date, formats, CultureInfo.InvariantCulture, DateTimeStyles.None, out result);
+            bool leapYear = DateTime.IsLeapYear(Convert.ToInt32(year));
+            //Console.WriteLine(dateValide);
         }
     }
 }
