@@ -11,7 +11,7 @@ namespace ZodiacService.Services
 {
     public class CustomerZodiacService : Zodiac.ZodiacBase
     {
-        private readonly ZodiacOperations zodiacOperations=new ZodiacOperations();
+        private readonly ZodiacOperations zodiacOperations = new ZodiacOperations();
         private readonly ILogger<CustomerZodiacService> _logger;
 
         public CustomerZodiacService(ILogger<CustomerZodiacService> logger)
@@ -24,11 +24,19 @@ namespace ZodiacService.Services
             _logger.Log(LogLevel.Information, "GetZodiacSign function has been called.");
 
             var zodiacSignName = zodiacOperations.GetZodiacSign(request);
-            zodiacOperations.ValidateDate(request);
+            if (zodiacOperations.ValidateDate(request) == true)
+            {
 
-            var response = zodiacSignName;
-            
-            return Task.FromResult(response);
+                var response = zodiacSignName;
+                return Task.FromResult(response);
+            }
+            else
+            {
+                var response =new ZodiacSign() { SignName=null};
+                return Task.FromResult(response);
+            }
+
+
         }
 
 

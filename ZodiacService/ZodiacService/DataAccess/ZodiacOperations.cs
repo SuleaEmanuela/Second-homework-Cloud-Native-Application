@@ -62,8 +62,9 @@ namespace ZodiacService.DataAccess
             return zodiacSign;
         }
 
-        public static void validateCharPlacement(CustomerDate date)
+        public static bool validateCharPlacement(CustomerDate date)
         {
+            bool isValide = false;
             DateTime result;
             char[] dateByCharaters = date.Date.ToCharArray();
             string[] formats = { "M/d/yyyy", "MM/dd/yyyy" };
@@ -71,29 +72,54 @@ namespace ZodiacService.DataAccess
             {
                 if (dateByCharaters[1] == '/' && dateByCharaters[3] == '/')
                 {
-                    Console.WriteLine("Pos:" + dateByCharaters[1] + " " + dateByCharaters[3]);
+                    //Console.WriteLine("Pos:" + dateByCharaters[1] + " " + dateByCharaters[3]);
+                    isValide = true;
                 }
             }
             if (DateTime.TryParseExact(date.Date, formats[1], CultureInfo.InvariantCulture, DateTimeStyles.None, out result) == true)
             {
                 if (dateByCharaters[2] == '/' && dateByCharaters[5] == '/')
                 {
-                    Console.WriteLine("Pos:" + dateByCharaters[2] + " " + dateByCharaters[5]);
+                    isValide = true;
+                    //Console.WriteLine("Pos:" + dateByCharaters[2] + " " + dateByCharaters[5]);
                 }
             }
+            return isValide;
 
         }
 
-        public void ValidateDate(CustomerDate date)
+        public bool checkLeapYear(CustomerDate date)
         {
             string[] formattedDate = date.Date.Split('/');
-            string day = formattedDate[1];
-            string month = formattedDate[0];
             string year = formattedDate[2];
+            if (DateTime.IsLeapYear(Convert.ToInt32(year)) == true)
+            {
+                return true;
+            }
+            else
+                return false;
+        }
+
+        public bool checkFormatDate(CustomerDate date)
+        {
             DateTime result;
             string[] formats = { "M/d/yyyy", "MM/dd/yyyy" };
-            bool dateFormatValide = DateTime.TryParseExact(date.Date, formats, CultureInfo.InvariantCulture, DateTimeStyles.None, out result);
-            bool leapYear = DateTime.IsLeapYear(Convert.ToInt32(year));
+            if (DateTime.TryParseExact(date.Date, formats, CultureInfo.InvariantCulture, DateTimeStyles.None, out result) == true)
+            {
+                return true;
+            }
+            else
+                return false;
+        }
+
+        public bool ValidateDate(CustomerDate date)
+        {
+            if (checkFormatDate(date) == true && checkLeapYear(date) == true && validateCharPlacement(date) == true)
+            {
+                return true;
+            }
+            else
+                return false;
             //Console.WriteLine(dateValide);
         }
     }
