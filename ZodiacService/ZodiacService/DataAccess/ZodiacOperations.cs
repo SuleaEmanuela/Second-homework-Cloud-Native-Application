@@ -62,6 +62,28 @@ namespace ZodiacService.DataAccess
             return zodiacSign;
         }
 
+        public static void validateCharPlacement(CustomerDate date)
+        {
+            DateTime result;
+            char[] dateByCharaters = date.Date.ToCharArray();
+            string[] formats = { "M/d/yyyy", "MM/dd/yyyy" };
+            if (DateTime.TryParseExact(date.Date, formats[0], CultureInfo.InvariantCulture, DateTimeStyles.None, out result) == true)
+            {
+                if (dateByCharaters[1] == '/' && dateByCharaters[3] == '/')
+                {
+                    Console.WriteLine("Pos:" + dateByCharaters[1] + " " + dateByCharaters[3]);
+                }
+            }
+            if (DateTime.TryParseExact(date.Date, formats[1], CultureInfo.InvariantCulture, DateTimeStyles.None, out result) == true)
+            {
+                if (dateByCharaters[2] == '/' && dateByCharaters[5] == '/')
+                {
+                    Console.WriteLine("Pos:" + dateByCharaters[2] + " " + dateByCharaters[5]);
+                }
+            }
+
+        }
+
         public void ValidateDate(CustomerDate date)
         {
             string[] formattedDate = date.Date.Split('/');
