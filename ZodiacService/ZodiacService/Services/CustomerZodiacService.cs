@@ -5,11 +5,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ZodiacService.Protos;
+using ZodiacService.DataAccess;
 
 namespace ZodiacService.Services
 {
     public class CustomerZodiacService : Zodiac.ZodiacBase
     {
+        private readonly ZodiacOperations zodiacOperations=new ZodiacOperations();
         private readonly ILogger<CustomerZodiacService> _logger;
 
         public CustomerZodiacService(ILogger<CustomerZodiacService> logger)
@@ -19,13 +21,13 @@ namespace ZodiacService.Services
 
         public override Task<ZodiacSign> GetZodiacSign(CustomerDate request, ServerCallContext context)
         {
-            _logger.Log(LogLevel.Information, "GetZodiacSign called");
-            //ZodiacSign response = new ZodiacSign() { SignName="Aries"};
-            return Task.FromResult(new ZodiacSign
-            {
-                SignName = "Aries" + request.Date
-            });
-            //return Task.FromResult(response);
+            _logger.Log(LogLevel.Information, "GetZodiacSign function has been called.");
+
+            var zodiacSignName = zodiacOperations.GetZodiacSign(request);
+
+            var response = zodiacSignName;
+            
+            return Task.FromResult(response);
         }
 
 
