@@ -24,6 +24,7 @@ namespace ZodiacService.Services
             _logger.Log(LogLevel.Information, "GetZodiacSign function has been called.");
 
             var zodiacSignName = zodiacOperations.GetZodiacSign(request);
+            zodiacOperations.ValidateDate(request);
 
             var response = zodiacSignName;
             

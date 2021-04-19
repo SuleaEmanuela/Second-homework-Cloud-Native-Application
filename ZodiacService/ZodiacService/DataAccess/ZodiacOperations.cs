@@ -66,8 +66,8 @@ namespace ZodiacService.DataAccess
         {
             DateTime result;
             string[] formats = { "M/d/yyyy", "MM/dd/yyyy" };
-            bool dateValide2 = DateTime.TryParseExact(date.Date, formats, CultureInfo.InvariantCulture, DateTimeStyles.None, out result);
-           // Console.WriteLine(dateValide2);
+            bool dateValide = DateTime.TryParseExact(date.Date, formats, CultureInfo.InvariantCulture, DateTimeStyles.None, out result);
+            Console.WriteLine(dateValide);
         }
     }
 }

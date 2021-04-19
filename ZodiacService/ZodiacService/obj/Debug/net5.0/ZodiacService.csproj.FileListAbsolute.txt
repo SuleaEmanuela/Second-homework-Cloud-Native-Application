@@ -1,4 +1,3 @@
-C:\Users\emasu\Desktop\CNA\Teme\Tema2\Second-homework-Cloud-Native-Application\ZodiacService\ZodiacService\obj\Debug\net5.0\ZodiacService.csprojAssemblyReference.cache
 C:\Users\emasu\Desktop\CNA\Teme\Tema2\Second-homework-Cloud-Native-Application\ZodiacService\ZodiacService\obj\Debug\net5.0\ZodiacService.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\emasu\Desktop\CNA\Teme\Tema2\Second-homework-Cloud-Native-Application\ZodiacService\ZodiacService\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\emasu\Desktop\CNA\Teme\Tema2\Second-homework-Cloud-Native-Application\ZodiacService\ZodiacService\bin\Debug\net5.0\appsettings.json
