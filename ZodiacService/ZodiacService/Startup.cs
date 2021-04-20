@@ -32,7 +32,6 @@ namespace ZodiacService
 
             app.UseEndpoints(endpoints =>
             {
-                //endpoints.MapGrpcService<GreeterService>();
                 endpoints.MapGrpcService<CustomerZodiacService>();
 
                 endpoints.MapGet("/", async context =>

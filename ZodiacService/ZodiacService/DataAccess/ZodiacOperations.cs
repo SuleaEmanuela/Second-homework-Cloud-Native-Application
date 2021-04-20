@@ -125,7 +125,7 @@ namespace ZodiacService.DataAccess
         public ZodiacSign GetValideSign(CustomerDate date)
         {
             var response = new ZodiacSign();
-            string invalideDateMessage= "The date is not valide!";
+            string invalideDateMessage = "The date is not valide!";
             response.SignName = invalideDateMessage;
             if (ValidateDate(date) == true)
             {

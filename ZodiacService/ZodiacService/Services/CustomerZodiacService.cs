@@ -23,23 +23,8 @@ namespace ZodiacService.Services
         {
             _logger.Log(LogLevel.Information, "GetZodiacSign function has been called.");
 
-            //var zodiacSignName = zodiacOperations.GetZodiacSign(request);
             var response = zodiacOperations.GetValideSign(request);
-            //if (zodiacOperations.ValidateDate(request) == true)
-            //{
-            //    var response = zodiacSignName;
-            //    _logger.Log(LogLevel.Information, "The date is succesfully valide.");
-               return Task.FromResult(response);
-            //}
-            //else
-            //{
-            //    var response =new ZodiacSign();
-            //    _logger.Log(LogLevel.Information, "The date is not valide.The client will get no sign name for the typed date!");
-            //    return Task.FromResult(response);
-            //}
-
-
-
+            return Task.FromResult(response);
         }
 
 
