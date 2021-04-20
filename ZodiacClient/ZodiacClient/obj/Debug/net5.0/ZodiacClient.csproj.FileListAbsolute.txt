@@ -1,4 +1,3 @@
-C:\Users\emasu\Desktop\CNA\Teme\Tema2\Second-homework-Cloud-Native-Application\ZodiacClient\ZodiacClient\obj\Debug\net5.0\ZodiacClient.csprojAssemblyReference.cache
 C:\Users\emasu\Desktop\CNA\Teme\Tema2\Second-homework-Cloud-Native-Application\ZodiacClient\ZodiacClient\obj\Debug\net5.0\ZodiacClient.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\emasu\Desktop\CNA\Teme\Tema2\Second-homework-Cloud-Native-Application\ZodiacClient\ZodiacClient\bin\Debug\net5.0\ZodiacClient.exe
 C:\Users\emasu\Desktop\CNA\Teme\Tema2\Second-homework-Cloud-Native-Application\ZodiacClient\ZodiacClient\bin\Debug\net5.0\ZodiacClient.deps.json
@@ -12,6 +11,7 @@ C:\Users\emasu\Desktop\CNA\Teme\Tema2\Second-homework-Cloud-Native-Application\Z
 C:\Users\emasu\Desktop\CNA\Teme\Tema2\Second-homework-Cloud-Native-Application\ZodiacClient\ZodiacClient\bin\Debug\net5.0\Grpc.Net.Client.dll
 C:\Users\emasu\Desktop\CNA\Teme\Tema2\Second-homework-Cloud-Native-Application\ZodiacClient\ZodiacClient\bin\Debug\net5.0\Grpc.Net.Common.dll
 C:\Users\emasu\Desktop\CNA\Teme\Tema2\Second-homework-Cloud-Native-Application\ZodiacClient\ZodiacClient\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\emasu\Desktop\CNA\Teme\Tema2\Second-homework-Cloud-Native-Application\ZodiacClient\ZodiacClient\obj\Debug\net5.0\ZodiacClient.csprojAssemblyReference.cache
 C:\Users\emasu\Desktop\CNA\Teme\Tema2\Second-homework-Cloud-Native-Application\ZodiacClient\ZodiacClient\obj\Debug\net5.0\ZodiacClient.AssemblyInfoInputs.cache
 C:\Users\emasu\Desktop\CNA\Teme\Tema2\Second-homework-Cloud-Native-Application\ZodiacClient\ZodiacClient\obj\Debug\net5.0\ZodiacClient.AssemblyInfo.cs
 C:\Users\emasu\Desktop\CNA\Teme\Tema2\Second-homework-Cloud-Native-Application\ZodiacClient\ZodiacClient\obj\Debug\net5.0\ZodiacClient.csproj.CoreCompileInputs.cache

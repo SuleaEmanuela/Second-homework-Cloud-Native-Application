@@ -28,3 +28,4 @@ C:\Users\emasu\Desktop\CNA\Teme\Tema2\Second-homework-Cloud-Native-Application\Z
 C:\Users\emasu\Desktop\CNA\Teme\Tema2\Second-homework-Cloud-Native-Application\ZodiacService\ZodiacService\obj\Debug\net5.0\ref\ZodiacService.dll
 C:\Users\emasu\Desktop\CNA\Teme\Tema2\Second-homework-Cloud-Native-Application\ZodiacService\ZodiacService\obj\Debug\net5.0\ZodiacService.pdb
 C:\Users\emasu\Desktop\CNA\Teme\Tema2\Second-homework-Cloud-Native-Application\ZodiacService\ZodiacService\obj\Debug\net5.0\ZodiacService.genruntimeconfig.cache
+C:\Users\emasu\Desktop\CNA\Teme\Tema2\Second-homework-Cloud-Native-Application\ZodiacService\ZodiacService\obj\Debug\net5.0\ZodiacService.csprojAssemblyReference.cache

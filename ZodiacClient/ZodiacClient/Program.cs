@@ -12,9 +12,12 @@ namespace ZodiacClient
         {
             using var channel = GrpcChannel.ForAddress("https://localhost:5001");
             var client = new Zodiac.ZodiacClient(channel);
-             var response = await client.GetZodiacSignAsync(
-                 new CustomerDate { Date="10/10/2000"});
-             Console.WriteLine(response.SignName);
+
+            Console.Write("Type date : ");
+            var date = Console.ReadLine();
+            var response = await client.GetZodiacSignAsync(new CustomerDate { Date = date });
+
+            Console.WriteLine(response.SignName);
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
         }

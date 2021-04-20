@@ -22,7 +22,7 @@ namespace ZodiacService.DataAccess
             try
             {
                 StreamReader sr = new StreamReader(filePath);
-                while ((line=sr.ReadLine()) != null)
+                while ((line = sr.ReadLine()) != null)
                 {
 
                     string[] words = line.Split(' ');
@@ -38,8 +38,7 @@ namespace ZodiacService.DataAccess
                     {
                         if ((Convert.ToInt32(day)) > Convert.ToInt32(startDay))
                             zodiacSign.SignName = words[0];
-                            //System.Console.WriteLine(words[0]);
-
+                        //System.Console.WriteLine(words[0]);
                     }
                     if (month.Contains(endMonth))
                     {
@@ -116,11 +115,28 @@ namespace ZodiacService.DataAccess
         {
             if (checkFormatDate(date) == true && checkLeapYear(date) == true && validateCharPlacement(date) == true)
             {
+
                 return true;
             }
             else
                 return false;
-            //Console.WriteLine(dateValide);
+        }
+
+        public ZodiacSign GetValideSign(CustomerDate date)
+        {
+            var response = new ZodiacSign();
+            string invalideDateMessage= "The date is not valide!";
+            response.SignName = invalideDateMessage;
+            if (ValidateDate(date) == true)
+            {
+                response = GetZodiacSign(date);
+                return response;
+            }
+            else
+            {
+                return response;
+            }
+
         }
     }
 }
